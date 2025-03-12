@@ -79,7 +79,7 @@
   opacity: 80%;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 634px) {
   .profile {
     flex-direction: column;
     max-width: 288px;
