@@ -17,7 +17,7 @@ Spots is an interactive social media website. People who use this website can ad
 
 This webpage is deployed to GitHub Pages
 
-- [Deployment Link]
+- [Deployment Link](https://vanpinon.github.io/se_project_spots/)
 
 **Figma**
 
