@@ -21,11 +21,11 @@
 .profile__name {
   margin: 0 0 12px;
   font-size: 32px;
+  line-height: 1;
   font-weight: 500;
   color: #212121;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -35,26 +35,31 @@
 .profile__description {
   margin: 0;
   font-size: 16px;
+  line-height: 1;
   color: #212121;
   opacity: 70%;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
+
 .profile__edit-button {
+  background-color: transparent;
   margin-top: auto;
   border: 0;
-  width: 107px;
-  background-color: transparent;
   padding: 0;
+  width: 107px;
+  height: 16px;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
   color: #212121;
   opacity: 70%;
   transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {
@@ -71,8 +76,11 @@
   border: 0;
   padding: 0;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
   border-radius: 8px;
   transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .profile__plus-button:hover {
@@ -116,5 +124,6 @@
 
   .profile__plus-button {
     margin-left: 0;
+    width: 288px;
   }
 }
