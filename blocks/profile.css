@@ -47,12 +47,13 @@
 }
 
 .profile__edit-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background-color: transparent;
   margin-top: auto;
   border: 0;
   padding: 0;
-  width: 107px;
-  height: 16px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -67,6 +68,10 @@
 }
 
 .profile__plus-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-left: auto;
   width: 149px;
   height: 52px;
