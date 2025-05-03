@@ -16,26 +16,19 @@ const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-// Select the necessary form elements. You should select
-// these from inside the modal, not the document.
 const addCardFormElement = document.querySelector("#new-post-modal-form");
 const nameInput = document.querySelector("#card-caption-input");
 const linkInput = document.querySelector("#card-image-input");
 
-// Create the form submission handler.
 function handleAddCardSubmit(evt) {
-  // Prevent default browser behavior.
   evt.preventDefault();
 
-  // Log both input values to the console.
   console.log(nameInput.value);
   console.log(linkInput.value);
-  // Close the modal.
 
   newPostModal.classList.remove("modal_is-opened");
 }
 
-// Create the submit listener.
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 
 profileEditButton.addEventListener("click", function () {
