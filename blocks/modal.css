@@ -28,6 +28,7 @@
   border-radius: 8px;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal__close-button {
@@ -37,16 +38,15 @@
   right: 50px;
   width: 40px;
   height: 40px;
-  background-image: url(../images/Close\ Icon.svg);
+  background-image: url(../images/black\ close\ icon.svg);
   border: 0;
   background-color: #fff;
-  opacity: 40%;
   transition: opacity 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .modal__close-button:hover {
-  opacity: 100%;
+  opacity: 40%;
 }
 
 .modal__title {
@@ -81,12 +81,13 @@
   border-color: #212121;
   padding: 0;
   width: 100%;
-  border-width: 1px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
   padding-left: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  cursor: pointer;
 }
 
 .modal__input::placeholder {
@@ -108,6 +109,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modal__save-button:hover {
+  opacity: 70%;
 }
 
 @media screen and (max-width: 634px) {
