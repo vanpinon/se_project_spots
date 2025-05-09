@@ -41,12 +41,13 @@
   background-image: url(../images/black\ close\ icon.svg);
   border: 0;
   background-color: #fff;
+  opacity: 40%;
   transition: opacity 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .modal__close-button:hover {
-  opacity: 40%;
+  opacity: 100%;
 }
 
 .modal__title {
@@ -69,8 +70,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
-  color: #212121;
-  opacity: 70%;
+  color: rgba(33, 33, 33, 0.3);
 }
 
 .modal__input {
@@ -88,6 +88,12 @@
   padding-left: 12px;
   border: 1px solid rgba(33, 33, 33, 0.4);
   cursor: pointer;
+  transition: border-color 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.modal__input:hover {
+  border-color: #212121;
 }
 
 .modal__input::placeholder {
@@ -114,13 +120,13 @@
 }
 
 .modal__save-button:hover {
-  opacity: 70%;
+  opacity: 80%;
 }
 
 @media screen and (max-width: 634px) {
   .modal__container {
     max-width: 300px;
-    padding: 12px 12px;
+    padding: 22px 12px 12px;
   }
 
   .modal__close-button {
@@ -145,6 +151,5 @@
   .modal__save-button {
     max-width: 276px;
     width: 100%;
-    margin: 12px 12px;
   }
 }
