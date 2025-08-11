@@ -57,7 +57,7 @@ const previewImage = previewModal.querySelector(".modal__image");
 const previewCaption = previewModal.querySelector(".modal__caption");
 
 previewCloseBtn.addEventListener("click", () => {
-  previewCloseBtn.closest("#preview-modal").remove();
+  closeModal(previewModal);
 });
 
 const cardTemplate = document.querySelector("#card-template");
@@ -109,11 +109,12 @@ function handleAddCardSubmit(evt) {
     name: nameInput.value,
     link: linkInput.value,
   };
+  evt.target.reset();
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal("newPostModal");
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
@@ -141,7 +142,7 @@ function handleProfileFormSubmit(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
 
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal("editProfileModal");
 }
 
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
