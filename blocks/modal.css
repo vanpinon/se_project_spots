@@ -92,7 +92,7 @@
 
 .modal__input {
   display: block;
-  margin: 8px 0 0;
+  margin: 8px 0;
   height: 52px;
   border-radius: 8px;
   border-color: #212121;
@@ -109,6 +109,10 @@
   box-sizing: border-box;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input:hover {
   border-color: #212121;
 }
@@ -116,6 +120,17 @@
 .modal__input::placeholder {
   color: #212121;
   opacity: 30%;
+}
+
+.modal__error {
+  color: #ff0000;
+  opacity: 70%;
+  width: 630px;
+  height: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
 }
 
 .modal__save-button {
@@ -138,6 +153,12 @@
 
 .modal__save-button:hover {
   opacity: 80%;
+}
+
+.button_inactive {
+  background-color: #212121;
+  color: #fcf5e5;
+  opacity: 50%;
 }
 
 .modal__image {
