@@ -160,7 +160,7 @@
   opacity: 80%;
 }
 
-.button_inactive {
+.modal__save-button_inactive {
   background-color: #212121;
   color: #fcf5e5;
   opacity: 50%;

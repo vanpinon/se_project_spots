@@ -31,7 +31,10 @@ const initialCards = [
 
 const profileEditButton = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const modalCloseButton = editProfileModal.querySelector(".modal__close-button");
+const profileCloseButton = editProfileModal.querySelector(
+  ".modal__close-button"
+);
+console.log(profileCloseButton);
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
@@ -105,8 +108,7 @@ function closeOnEscape(evt) {
 }
 
 function handleClick(evt) {
-  const modal = document.querySelector(".modal_is-opened");
-  if (evt.target.classList.contains("modal")) closeModal(modal);
+  if (evt.target.classList.contains("modal")) closeModal(evt.target);
 }
 
 function openModal(modal) {
@@ -149,7 +151,7 @@ profileEditButton.addEventListener("click", function () {
   openModal(editProfileModal);
 });
 
-modalCloseButton.addEventListener("click", function () {
+profileCloseButton.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
